@@ -29,4 +29,12 @@
 
 7. **bool allVisited()**
    - Fungsi: Fungsi ini memeriksa apakah semua vertex dalam graph telah dikunjungi. Metode `every` dari list digunakan untuk memastikan bahwa semua elemen dalam `visited` bernilai `true`.
-   - Jika semua ver
+   - Jika semua vertex telah di visited, fungsi ini akan mengembalikan `true`, jika tidak maka `false`.
+  
+8. **void main()**
+   - Fungsi: Fungsi utama ini digunakan untuk mengeksekusi program.
+
+## Langkah-langkah menjalankan program (void main)
+1. Membuat Graf: objek graf`g` dibuat dengan 5 vertex (`Graph(5)`)
+2. Menambahkan Edge: Koneksi (edges) ditambahkan antara vertex sesuai dengan gambar (graf adjacency). Contoh: `g.addEdge(0, 1)` yang menghubungkan vertex 0 (A) dengan vertex 1 (B)
+3. Trav
