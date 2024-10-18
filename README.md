@@ -17,5 +17,16 @@
   
 5. **void addEdge(int src, int dest)**
    - Fungsi: method ini digunakan untuk menambahkan edge (sisi) antara dua vertex, `src` sebagai sumber dan `dest` sebagai tujuan. Karena graph ini dianggap undirected (tidak berarah), edge akan ditambahkan di kedua arah:
-     A). `adjList[src].add(dest)`: Menambahkan vertex tujuan ke daftar tetangga vertex sumber.
-     B). `adjList[dest].add(src)`: Menambahkan vertex sumber ke daftar tetangga vertex tujuan
+   -  `adjList[src].add(dest)`: Menambahkan vertex tujuan ke daftar tetangga vertex sumber.
+   -  `adjList[dest].add(src)`: Menambahkan vertex sumber ke daftar tetangga vertex tujuan.
+
+6. **void traverse(int vertex)**
+   - Fungsi: Method ini melakukan traversal menggunakan algoritma DFS (Depth First Search) dengan pendekatan brute-force.
+   - Proses:
+     - Pertama, vertex yang dilewati akan ditandai sebagai (`visited[vertex] = true`).
+     - Lalu, kita mencetak vertex yang sedang dikunjungi (`print('Visited vertex: $vertex)'`).
+     - Setelah itu, kita mengiterasi semua tetangga vertex tersebut dengan menggunakan `forEach`. Jika tetangganya belum dikunjungi, kita menghubungkan vertex saat ini ke tetangganya dan melakkan rekursi untuk mengunjungi tetangganya tersebut (`traverse(adj)`)
+
+7. **bool allVisited()**
+   - Fungsi: Fungsi ini memeriksa apakah semua vertex dalam graph telah dikunjungi. Metode `every` dari list digunakan untuk memastikan bahwa semua elemen dalam `visited` bernilai `true`.
+   - Jika semua ver
