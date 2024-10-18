@@ -37,4 +37,19 @@
 ## Langkah-langkah menjalankan program (void main)
 1. Membuat Graf: objek graf`g` dibuat dengan 5 vertex (`Graph(5)`)
 2. Menambahkan Edge: Koneksi (edges) ditambahkan antara vertex sesuai dengan gambar (graf adjacency). Contoh: `g.addEdge(0, 1)` yang menghubungkan vertex 0 (A) dengan vertex 1 (B)
-3. Trav
+3. Traversing Graf: Program mulai melakukan traversal dari vertex 0 (`g.traverse(0)`), yang sesuai dengan vertex A
+4. Pengecekan Visited: Setelah traversal selesai, program akan memeriksa apakah semua vertex telah di kunjungi (visited) menggunakan fungsi `g.allVisited()`. Jika iya, maka dicetak "All vertices visited!!"
+
+## Output Program
+``` bash
+Visited vertex: 0
+Connecting vertex 0 to 1
+Visited vertex: 1
+Connecting vertex 1 to 2
+Visited vertex: 2
+Connecting vertex 2 to 3
+Visited vertex: 3
+Connecting vertex 3 to 4
+Visited vertex: 4
+All vertices visited!
+```
